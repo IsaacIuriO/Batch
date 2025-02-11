@@ -4,7 +4,7 @@
 
 ## Comandos do Batch
 
-### Criando um diretório (pasta):
+### __Criando um diretório (pasta)__:
 
 1. Abra o Bloco de Notas em .bat
 2. Em seguida, digite o seguinte código:
@@ -14,7 +14,7 @@
   mkdir "C:\Caminho\Para\NovoDiretorio"
 ```
 
-### Removendo um diretório:
+### __Removendo um diretório__:
 
 #### Sem nenhum arquivo dentro:
 1. Abra o arquivo .bat que deseja remover
@@ -32,7 +32,7 @@
   rmdir /s /q "C:\Caminho\Para\Diretorio"
 ```
 
-### Criar arquivos:
+### __Criar arquivos__:
 
 #### Criando arquivo de texto (`.txt`) :
 
@@ -52,7 +52,7 @@
   ) > C:\Caminho\Para\Arquivo.txt
 ```
 
-### Remover arquivos:
+### __Remover arquivos__:
 
 #### Removendo um arquivo em específico:
 
@@ -68,4 +68,14 @@ del "C:\Caminho\Para\Arquivo.txt"
 del "C:\Caminho\Para\*.txt"
 ```
 
+### __Copiar arquivos__:
 
+```
+copy "C:\Caminho\Origem\arquivo.txt" "C:\Caminho\Destino\"
+```
+
+### __Mover arquivos__:
+
+### __Renomear arquivos__:
+
+### __Exibindo conteúdo do arquivo__:
