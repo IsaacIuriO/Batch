@@ -4,78 +4,103 @@
 
 ## Comandos do Batch
 
-### __Criando um diretório (pasta)__:
+### __Habilitando funções no .bat__:
 
-1. Abra o Bloco de Notas em .bat
-2. Em seguida, digite o seguinte código:
+- Para habilitar as funções necessárias para a gerenciação dos arquivos, digite o seguinte código:
 
 ```
-  @echo off
-  mkdir "C:\Caminho\Para\NovoDiretorio"
+@@echo off
+```
+
+### __Criando um diretório (pasta)__:
+
+- Para criar um diretório/pasta no .bat, basta digitar o seguinte código:
+
+```
+  mkdir "nomeDoDiretório"
 ```
 
 ### __Removendo um diretório__:
 
-#### Sem nenhum arquivo dentro:
-1. Abra o arquivo .bat que deseja remover
-2. Em seguida, digite o seguinte código:
+- Para remover um diretório sem nenhum arquivo dentro, basta digitar o seguinte código:
 
 ```
-  @echo off
-  rmdir "C:\Caminho\Para\Diretorio"
+  rmdir "nomeDoDiretório"
 ```
 
-#### Se houver algum arquivo dentro:
+- Para remover um diretório com arquivos dentro, basta digitar o seguinte código:
 
 ```
-  @echo off
-  rmdir /s /q "C:\Caminho\Para\Diretorio"
+  rmdir /s /q "nomeDoDiretório"
 ```
 
 ### __Criar arquivos__:
 
-#### Criando arquivo de texto (`.txt`) :
+- Para criar arquivos com texto dentro, basta digitar o seguinte código:
 
 ```
-  @echo off
-  echo Este é um arquivo de teste > C:\Caminho\Para\Arquivo.txt
+  echo O conteúdo que você deseja escrever dentro do arquivo > "nomeDoArquivoTexto.txt"
 ```
 
-#### Criando arquivo com várias linhas:
+- Para criar arquivos com texto de várias linhas dentro, basta digitar o seguinte código:
 
 ```
-  @echo off
   (
-  echo Linha 1
-  echo Linha 2
-  echo Linha 3
-  ) > C:\Caminho\Para\Arquivo.txt
+  echo Linha de Texto 1
+  echo Linha de Texto 2
+  echo Linha de Texto 3
+  ) > nomeDoArquivoTexto.txt
+```
+
+- Para criar arquivos sem nenhum texto dentro, basta digitar o seguinte código:
+
+```
+  echo null > "nomeDoArquivoTexto.txt"
 ```
 
 ### __Remover arquivos__:
 
-#### Removendo um arquivo em específico:
+- Para remover um arquivo em específico, basta digitar o seguinte código:
 
 ```
-@echo off
-del "C:\Caminho\Para\Arquivo.txt"
+  del "nomeDoArquivoTexto.txt"
 ```
 
-#### Removendo vários arquivos:
+- Para remover todos os arquivos (.txt) dentro da pasta, basta digitar o seguinte código:
 
 ```
-@echo off
-del "C:\Caminho\Para\*.txt"
+  del "*.txt"
 ```
 
 ### __Copiar arquivos__:
 
+- Para copiar um arquivo de um lugar e colar em outro, basta digitar o seguinte código:
+
 ```
-copy "C:\Caminho\Origem\arquivo.txt" "C:\Caminho\Destino\"
+  copy "nomeDoArquivoTexto.txt" "C:\Users\ondeVocêDesejaColar\"
 ```
 
 ### __Mover arquivos__:
 
+- Para mover um arquivo de um lugar para outro, basta digitar o seguinte código:
+
+```
+  move "nomeDoArquivoTexto.txt" "C:\Users\ondeVocêDesejaMover\"
+```
+
 ### __Renomear arquivos__:
 
+- Para renomear um arquivo em específico, basta digitar o seguinte código:
+
+```
+  rename ------------------------------------------------
+```
+
 ### __Exibindo conteúdo do arquivo__:
+
+- Para exibir o conteúdo de um arquivo, basta digitar o seguinte código:
+
+```
+  type "C:\Caminho\Origem\nomeDoArquivoTexto.txt"
+```
+
