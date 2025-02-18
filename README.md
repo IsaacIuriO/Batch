@@ -2,6 +2,8 @@
 
 ## Objetivo
 
+Nesta atividade, você deve criar um arquivo de script Batch (.bat) que execute operações de manipulação de diretórios e arquivos, como criar, remover, copiar, mover e renomear arquivos. Além disso, você irá elaborar um arquivo README.md contendo a explicação dos comandos utilizados no script, conforme as instruções abaixo.
+
 ## Comandos do Batch
 
 ### __Habilitando funções no .bat__:
@@ -93,7 +95,7 @@
 - Para renomear um arquivo em específico, basta digitar o seguinte código:
 
 ```
-  rename ------------------------------------------------
+  rename "nomeDoArquivo.txt" "nomeNovoDoArquivo.txt"
 ```
 
 ### __Exibindo conteúdo do arquivo__:
